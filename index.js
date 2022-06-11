@@ -5,6 +5,7 @@ import {
   personFemaleNames,
   petNames,
   phoneNumbers,
+  jobTitles,
 } from "./data.js";
 
 // Helpers
@@ -43,7 +44,12 @@ export function phoneNumber() {
   return randomFromArray(phoneNumbers);
 }
 
+export function jobTitle() {
+  return randomFromArray(jobTitles);
+}
+
 console.log(personName());
 console.log(personAge());
 console.log(petName());
 console.log(phoneNumber());
+console.log(jobTitle());
