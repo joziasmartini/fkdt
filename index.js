@@ -1,5 +1,12 @@
 "use strict";
 
+import {
+  personMaleNames,
+  personFemaleNames,
+  petNames,
+  phoneNumbers,
+} from "./data.js";
+
 // Helpers
 function randomFromArray(array) {
   return array[Math.floor(Math.random() * array.length)];
