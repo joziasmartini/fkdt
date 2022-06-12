@@ -18,7 +18,7 @@ function randomNumber(max) {
 }
 
 // Functions
-export function personName(genre) {
+export function name(genre) {
   if (genre) {
     if (genre === "male") {
       return randomFromArray(personMaleNames);
@@ -32,24 +32,24 @@ export function personName(genre) {
   }
 }
 
-export function personAge() {
+export function age() {
   return randomNumber(100);
 }
 
-export function petName() {
+export function pet() {
   return randomFromArray(petNames);
 }
 
-export function phoneNumber() {
+export function phone() {
   return randomFromArray(phoneNumbers);
 }
 
-export function jobTitle() {
+export function job() {
   return randomFromArray(jobTitles);
 }
 
-console.log(personName());
-console.log(personAge());
-console.log(petName());
-console.log(phoneNumber());
-console.log(jobTitle());
+console.log(name());
+console.log(age());
+console.log(pet());
+console.log(phone());
+console.log(job());

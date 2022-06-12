@@ -1,11 +1,11 @@
 {
   "name": "xfake",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "description": "Generate fake data for projects.",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "node index.js",
+    "dev": "node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
