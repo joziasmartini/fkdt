@@ -5842,3 +5842,28 @@ export const jobTitles = [
   "Yoga Instructor",
   "",
 ];
+
+// To be added in future versions
+
+// const carNames = [];
+// const countryNames = [];
+// const colorNames = [];
+// const foodNames = [];
+// const deviceNames = [];
+// const randomPhrases = [];
+// const skillNames = [];
+// const courseNames = [];
+// const interestNames = [];
+// const symptomNames = [];
+// const medicineNames = [];
+// const bodyPartNames = [];
+// const planetNames = [];
+// const brandNames = [];
+// const clothNames = [];
+// const drinkNames = [];
+// const gameTitles = [];
+// const movieTitles = [];
+// const songNames = [];
+// const sportNames = [];
+// const stateNames = [];
+// const cityNames = [];
