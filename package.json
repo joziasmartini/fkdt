@@ -1,6 +1,6 @@
 {
   "name": "xfake",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Generate fake data for projects.",
   "main": "index.js",
   "type": "module",
