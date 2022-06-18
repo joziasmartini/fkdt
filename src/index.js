@@ -5,6 +5,7 @@ import {
   personFemaleNames,
   petNames,
   jobTitles,
+  countryNames,
 } from "./data.js";
 
 // Helpers
@@ -95,6 +96,10 @@ export function ip() {
   return ip;
 }
 
+export function country() {
+  return randomFromArray(countryNames);
+}
+
 console.log(name());
 console.log(age());
 console.log(phone());
@@ -104,3 +109,4 @@ console.log(uuid());
 console.log(password());
 console.log(username());
 console.log(ip());
+console.log(country());
