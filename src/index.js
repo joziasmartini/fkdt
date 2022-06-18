@@ -73,6 +73,18 @@ export function password() {
   return randomStringWithNumbers(8);
 }
 
+export function username() {
+  let nameOne = name();
+  let nameTwo = name();
+  let charNumber = 0;
+  while (charNumber < 2) {
+    charNumber = randomNumber(5);
+  }
+  nameOne = nameOne.slice(0, charNumber);
+  nameTwo = nameTwo.slice(0, charNumber);
+  return `${nameOne}${nameTwo}`.toLowerCase();
+}
+
 console.log(name());
 console.log(age());
 console.log(phone());
@@ -80,3 +92,4 @@ console.log(job());
 console.log(pet());
 console.log(uuid());
 console.log(password());
+console.log(username());
