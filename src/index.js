@@ -4,13 +4,12 @@ import {
   personMaleNames,
   personFemaleNames,
   petNames,
-  phoneNumbers,
   jobTitles,
 } from "./data.js";
 
 // Helpers
-function randomFromArray(array) {
-  return array[Math.floor(Math.random() * array.length)];
+function randomFromArray(arr) {
+  return arr[Math.floor(Math.random() * arr.length)];
 }
 
 function randomNumber(max) {
@@ -32,16 +31,27 @@ export function name(genre) {
   }
 }
 
+export function phone() {
+  let mask = "(xxx) xxx-xxxx";
+  let numbers = [];
+
+  for (let i = 0; i < 10; i++) {
+    numbers.push(Math.floor(Math.random() * 10));
+  }
+
+  numbers.forEach((item) => {
+    mask = mask.replace("x", item);
+  });
+
+  return mask;
+}
+
 export function age() {
   return randomNumber(100);
 }
 
 export function pet() {
   return randomFromArray(petNames);
-}
-
-export function phone() {
-  return randomFromArray(phoneNumbers);
 }
 
 export function job() {
