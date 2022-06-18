@@ -85,6 +85,16 @@ export function username() {
   return `${nameOne}${nameTwo}`.toLowerCase();
 }
 
+export function ip() {
+  let ip = "x.x.x.x";
+
+  for (let i = 0; i < 12; i++) {
+    ip = ip.replace("x", randomNumber(127));
+  }
+
+  return ip;
+}
+
 console.log(name());
 console.log(age());
 console.log(phone());
@@ -93,3 +103,4 @@ console.log(pet());
 console.log(uuid());
 console.log(password());
 console.log(username());
+console.log(ip());
