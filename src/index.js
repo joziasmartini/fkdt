@@ -16,34 +16,44 @@ function randomNumber(max) {
   return Math.floor(Math.random() * max);
 }
 
-// Functions
-export function name(genre) {
-  if (genre) {
-    if (genre === "male") {
-      return randomFromArray(personMaleNames);
-    }
-    return randomFromArray(personFemaleNames);
-  } else {
-    if (Math.random() > 0.5) {
-      return randomFromArray(personMaleNames);
-    }
-    return randomFromArray(personFemaleNames);
+function randomStringWithNumbers(length) {
+  var result = "";
+  var characters =
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  var charactersLength = characters.length;
+  for (var i = 0; i < length; i++) {
+    result += characters.charAt(Math.floor(Math.random() * charactersLength));
   }
+  return result;
+}
+
+// Functions
+export function name() {
+  return Math.random() > 0.5
+    ? randomFromArray(personMaleNames)
+    : randomFromArray(personFemaleNames);
+}
+
+export function age() {
+  return randomNumber(100);
 }
 
 export function phone() {
-  let mask = "(xxx) xxx-xxxx";
-  let numbers = [];
+  let number = "(xxx) xxx-xxxx";
 
   for (let i = 0; i < 10; i++) {
-    numbers.push(Math.floor(Math.random() * 10));
+    number = number.replace("x", randomNumber(10));
   }
 
-  numbers.forEach((item) => {
-    mask = mask.replace("x", item);
-  });
+  return number;
+}
 
-  return mask;
+export function job() {
+  return randomFromArray(jobTitles);
+}
+
+export function pet() {
+  return randomFromArray(petNames);
 }
 
 function uuid() {
@@ -59,21 +69,14 @@ function uuid() {
   return uuid;
 }
 
-export function age() {
-  return randomNumber(100);
-}
-
-export function pet() {
-  return randomFromArray(petNames);
-}
-
-export function job() {
-  return randomFromArray(jobTitles);
+export function password() {
+  return randomStringWithNumbers(8);
 }
 
 console.log(name());
 console.log(age());
-console.log(pet());
 console.log(phone());
 console.log(job());
+console.log(pet());
 console.log(uuid());
+console.log(password());
