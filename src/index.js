@@ -11,6 +11,7 @@ import {
   emailDomains,
   cityNames,
   interests,
+  colors,
 } from "./data.js";
 
 // Helpers
@@ -74,6 +75,11 @@ export function job() {
 export function interest() {
   return randomFromArray(interests);
 }
+
+export function color() {
+  return randomFromArray(colors);
+}
+
 export function pet() {
   return randomFromArray(petNames);
 }
@@ -142,6 +148,7 @@ console.log(age());
 console.log(phone());
 console.log(job());
 console.log(interest());
+console.log(color());
 console.log(pet());
 console.log(uuid());
 console.log(password());

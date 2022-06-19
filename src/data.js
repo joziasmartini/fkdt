@@ -1059,6 +1059,25 @@ export const interests = [
   "Languages",
 ];
 
+export const colors = [
+  "Black",
+  "White",
+  "Gray",
+  "Red",
+  "Orange",
+  "Yellow",
+  "Green",
+  "Blue",
+  "Indigo",
+  "Violet",
+  "Purple",
+  "Pink",
+  "Silver",
+  "Gold",
+  "Beige",
+  "Brown",
+];
+
 // To be added in future versions
 // const carNames = [];
 // const countryNames = [];
