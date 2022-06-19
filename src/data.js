@@ -941,7 +941,7 @@ export const countryNames = [
   "Zimbabwe",
 ];
 
-export const cityNames = [
+export const stateNames = [
   "Alabama",
   "Alaska",
   "Arizona",
@@ -1080,8 +1080,6 @@ export const colors = [
 
 // To be added in future versions
 // const carNames = [];
-// const countryNames = [];
-// const colorNames = [];
 // const foodNames = [];
 // const deviceNames = [];
 // const randomPhrases = [];
@@ -1099,5 +1097,3 @@ export const colors = [
 // const movieTitles = [];
 // const songNames = [];
 // const sportNames = [];
-// const stateNames = [];
-// const cityNames = [];

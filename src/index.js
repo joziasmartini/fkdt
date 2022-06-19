@@ -9,7 +9,7 @@ import {
   vowels,
   consonants,
   emailDomains,
-  cityNames,
+  stateNames,
   interests,
   colors,
 } from "./data.js";
@@ -124,8 +124,8 @@ export function country() {
   return randomFromArray(countryNames);
 }
 
-export function city() {
-  return randomFromArray(cityNames);
+export function state() {
+  return randomFromArray(stateNames);
 }
 
 export function latitude() {
@@ -155,6 +155,6 @@ console.log(password());
 console.log(username());
 console.log(ip());
 console.log(country());
-console.log(city());
+console.log(state());
 console.log(latitude());
 console.log(longitude());
