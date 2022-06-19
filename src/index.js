@@ -100,6 +100,14 @@ export function country() {
   return randomFromArray(countryNames);
 }
 
+export function latitude() {
+  return `${randomNumber(99)}.${randomNumber(9999)}`;
+}
+
+export function longitude() {
+  return `-${randomNumber(99)}.${randomNumber(9999)}`;
+}
+
 console.log(name());
 console.log(age());
 console.log(phone());
@@ -110,3 +118,5 @@ console.log(password());
 console.log(username());
 console.log(ip());
 console.log(country());
+console.log(latitude());
+console.log(longitude());
