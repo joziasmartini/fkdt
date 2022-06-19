@@ -1018,6 +1018,47 @@ export const consonants = [
   "",
 ];
 
+export const interests = [
+  "Basketball",
+  "Football",
+  "Volleyball",
+  "Marathon running",
+  "Skiing",
+  "Tennis",
+  "Cycling",
+  "Swimming",
+  "Baseball",
+  "Mountain climbing",
+  "Chess",
+  "Playing a musical instrument",
+  "Reading",
+  "Writing",
+  "Sketching",
+  "Photography",
+  "Design",
+  "Blog writing",
+  "Painting",
+  "Boardgames",
+  "Creating and organizing a book club",
+  "Networking events",
+  "Local meetups",
+  "Volunteering at a charity center",
+  "Public speaking",
+  "Exploring other cultures",
+  "Dancing",
+  "Camping ",
+  "Archery",
+  "Gardening",
+  "Stand-up comedy",
+  "Baking",
+  "Journaling",
+  "Calligraphy",
+  "Fencing",
+  "Theater",
+  "Yoga",
+  "Languages",
+];
+
 // To be added in future versions
 // const carNames = [];
 // const countryNames = [];

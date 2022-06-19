@@ -10,6 +10,7 @@ import {
   consonants,
   emailDomains,
   cityNames,
+  interests,
 } from "./data.js";
 
 // Helpers
@@ -70,6 +71,9 @@ export function job() {
   return randomFromArray(jobTitles);
 }
 
+export function interest() {
+  return randomFromArray(interests);
+}
 export function pet() {
   return randomFromArray(petNames);
 }
@@ -137,6 +141,7 @@ console.log(email());
 console.log(age());
 console.log(phone());
 console.log(job());
+console.log(interest());
 console.log(pet());
 console.log(uuid());
 console.log(password());
