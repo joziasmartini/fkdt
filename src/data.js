@@ -1077,23 +1077,3 @@ export const colors = [
   "Beige",
   "Brown",
 ];
-
-// To be added in future versions
-// const carNames = [];
-// const foodNames = [];
-// const deviceNames = [];
-// const randomPhrases = [];
-// const skillNames = [];
-// const courseNames = [];
-// const interestNames = [];
-// const symptomNames = [];
-// const medicineNames = [];
-// const bodyPartNames = [];
-// const planetNames = [];
-// const brandNames = [];
-// const clothNames = [];
-// const drinkNames = [];
-// const gameTitles = [];
-// const movieTitles = [];
-// const songNames = [];
-// const sportNames = [];
