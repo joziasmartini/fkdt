@@ -6,6 +6,8 @@ import {
   petNames,
   jobTitles,
   countryNames,
+  vowels,
+  consonants,
 } from "./data.js";
 
 // Helpers
@@ -13,8 +15,10 @@ function randomFromArray(arr) {
   return arr[Math.floor(Math.random() * arr.length)];
 }
 
-function randomNumber(max) {
-  return Math.floor(Math.random() * max);
+function randomNumber(max, min) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 function randomStringWithNumbers(length) {
@@ -29,6 +33,17 @@ function randomStringWithNumbers(length) {
 }
 
 // Functions
+export function generatedName() {
+  let name = [
+    randomFromArray(vowels).toUpperCase(),
+    randomFromArray(consonants),
+    randomFromArray(vowels),
+    randomFromArray(consonants),
+    randomFromArray(vowels),
+  ];
+  return name.join("");
+}
+
 export function name() {
   return Math.random() > 0.5
     ? randomFromArray(personMaleNames)
@@ -36,14 +51,14 @@ export function name() {
 }
 
 export function age() {
-  return randomNumber(100);
+  return randomNumber(100, 18);
 }
 
 export function phone() {
   let number = "(xxx) xxx-xxxx";
 
   for (let i = 0; i < 10; i++) {
-    number = number.replace("x", randomNumber(10));
+    number = number.replace("x", randomNumber(10, 0));
   }
 
   return number;
@@ -77,10 +92,7 @@ export function password() {
 export function username() {
   let nameOne = name();
   let nameTwo = name();
-  let charNumber = 0;
-  while (charNumber < 2) {
-    charNumber = randomNumber(5);
-  }
+  let charNumber = randomNumber(5, 2);
   nameOne = nameOne.slice(0, charNumber);
   nameTwo = nameTwo.slice(0, charNumber);
   return `${nameOne}${nameTwo}`.toLowerCase();
@@ -90,7 +102,7 @@ export function ip() {
   let ip = "x.x.x.x";
 
   for (let i = 0; i < 12; i++) {
-    ip = ip.replace("x", randomNumber(127));
+    ip = ip.replace("x", randomNumber(127, 0));
   }
 
   return ip;
@@ -101,14 +113,14 @@ export function country() {
 }
 
 export function latitude() {
-  return `${randomNumber(99)}.${randomNumber(9999)}`;
+  return `${randomNumber(99, 11)}.${randomNumber(9999, 1111)}`;
 }
 
 export function longitude() {
-  return `-${randomNumber(99)}.${randomNumber(9999)}`;
+  return `-${randomNumber(99, 11)}.${randomNumber(9999, 1111)}`;
 }
 
-console.log(name());
+console.log(generatedName());
 console.log(age());
 console.log(phone());
 console.log(job());
@@ -120,3 +132,7 @@ console.log(ip());
 console.log(country());
 console.log(latitude());
 console.log(longitude());
+
+for (let i = 0; i < 100; i++) {
+  console.log(generatedName() + " " + generatedName());
+}
