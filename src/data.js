@@ -734,6 +734,14 @@ export const jobTitles = [
   "",
 ];
 
+export const emailDomains = [
+  "gmail.com",
+  "outlook.com",
+  "yahoo.com",
+  "aol.com",
+  "protonmail.com",
+];
+
 export const countryNames = [
   "Afghanistan",
   "Albania",

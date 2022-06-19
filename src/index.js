@@ -8,6 +8,7 @@ import {
   countryNames,
   vowels,
   consonants,
+  emailDomains,
 } from "./data.js";
 
 // Helpers
@@ -120,7 +121,14 @@ export function longitude() {
   return `-${randomNumber(99, 11)}.${randomNumber(9999, 1111)}`;
 }
 
-console.log(generatedName());
+export function email() {
+  let u = username();
+  let email = randomFromArray(emailDomains);
+  return `${u}@${email}`;
+}
+
+console.log(name());
+console.log(email());
 console.log(age());
 console.log(phone());
 console.log(job());
@@ -132,7 +140,3 @@ console.log(ip());
 console.log(country());
 console.log(latitude());
 console.log(longitude());
-
-for (let i = 0; i < 100; i++) {
-  console.log(generatedName() + " " + generatedName());
-}
