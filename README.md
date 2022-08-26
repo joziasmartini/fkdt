@@ -30,10 +30,6 @@ You can use this library as a fake data generator for projects, tests and more. 
 - fake.state()
 - fake.latitude()
 
-### Comparisons
-
-
-
 ### License
 
 See the [LICENSE.md](LICENSE.md) file.
