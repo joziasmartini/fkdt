@@ -2,6 +2,10 @@
 
 Generate fake data for projects.
 
+### Introduction
+
+You can use this library as a fake data generator for projects, tests and more. It's light and fast, as you expect. This package also has 23kb while [faker.js](https://github.com/faker-js/faker) has 9mb+.
+
 ### Installation
 
 - Install through `npm install fakedata`
@@ -28,7 +32,7 @@ Generate fake data for projects.
 
 ### Comparisons
 
-This package has 40kb while faker.js has 8mb+.
+
 
 ### License
 
