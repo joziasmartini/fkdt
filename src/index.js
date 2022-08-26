@@ -30,11 +30,9 @@ export function age() {
 
 export function phone() {
   let number = "(xxx) xxx-xxxx";
-
   for (let i = 0; i < 10; i++) {
     number = number.replace("x", randomNumber(0, 10));
   }
-
   return number;
 }
 
@@ -82,11 +80,9 @@ export function username() {
 
 export function ip() {
   let ip = "x.x.x.x";
-
   for (let i = 0; i < 12; i++) {
     ip = ip.replace("x", randomNumber(127, 0));
   }
-
   return ip;
 }
 
@@ -111,20 +107,3 @@ export function email() {
   let email = randomElementFromArray(emailDomains);
   return `${u}@${email}`;
 }
-
-console.log(name());
-console.log(email());
-console.log(username());
-console.log(password());
-console.log(ip());
-console.log(age());
-console.log(phone());
-console.log(job());
-console.log(interest());
-console.log(color());
-console.log(pet());
-console.log(uuid());
-console.log(country());
-console.log(state());
-console.log(latitude());
-console.log(longitude());
