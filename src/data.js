@@ -991,33 +991,6 @@ export const stateNames = [
   "Wyoming",
 ];
 
-export const vowels = ["a", "e", "i", "o", "u"];
-
-export const consonants = [
-  "b",
-  "c",
-  "d",
-  "f",
-  "g",
-  "h",
-  "j",
-  "k",
-  "l",
-  "m",
-  "n",
-  "p",
-  "q",
-  "r",
-  "s",
-  "t",
-  "v",
-  "w",
-  "x",
-  "y",
-  "z",
-  "",
-];
-
 export const interests = [
   "Basketball",
   "Football",
@@ -1077,23 +1050,3 @@ export const colors = [
   "Beige",
   "Brown",
 ];
-
-// To be added in future versions
-// const carNames = [];
-// const foodNames = [];
-// const deviceNames = [];
-// const randomPhrases = [];
-// const skillNames = [];
-// const courseNames = [];
-// const interestNames = [];
-// const symptomNames = [];
-// const medicineNames = [];
-// const bodyPartNames = [];
-// const planetNames = [];
-// const brandNames = [];
-// const clothNames = [];
-// const drinkNames = [];
-// const gameTitles = [];
-// const movieTitles = [];
-// const songNames = [];
-// const sportNames = [];

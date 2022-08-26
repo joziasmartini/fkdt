@@ -1,12 +1,11 @@
 {
   "name": "xfake",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Generate fake data for projects.",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "node src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "clear && node src/index.js",
   },
   "repository": {
     "type": "git",
@@ -19,7 +18,10 @@
     "generate",
     "mock"
   ],
-  "author": "Jozias Martini",
+  "author": {
+    "name": "Jozias Martini",
+    "email": "jozias.martini@gmail.com"  
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/joziasmartini/xfake/issues"
