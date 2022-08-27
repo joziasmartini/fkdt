@@ -20,11 +20,14 @@
   ],
   "author": {
     "name": "Jozias Martini",
-    "email": "jozias.martini@gmail.com"  
+    "email": "jozias.martini@gmail.com"
   },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/joziasmartini/xfake/issues"
   },
-  "homepage": "https://github.com/joziasmartini/xfake#readme"
+  "homepage": "https://github.com/joziasmartini/xfake#readme",
+  "dependencies": {
+    "typescript": "^4.8.2"
+  }
 }
