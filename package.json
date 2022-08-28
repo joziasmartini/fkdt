@@ -5,7 +5,9 @@
   "main": "src/index.js",
   "type": "module",
   "scripts": {
-    "dev": "clear && node src/index.js"
+    "dev": "node dist/index.js",
+    "build": "tsc --build",
+    "clean": "tsc --build --clean"
   },
   "repository": {
     "type": "git",
