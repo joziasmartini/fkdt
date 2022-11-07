@@ -23,11 +23,11 @@ export function age() {
 }
 
 export function phone() {
-  let number: any = '(xxx) xxx-xxxx';
+  let phoneNumber: any = '(xxx) xxx-xxxx';
   for (let i = 0; i < 10; i++) {
-    number = number.replace('x', randomNumber(0, 10));
+    phoneNumber = phoneNumber.replace('x', randomNumber(0, 10));
   }
-  return number;
+  return phoneNumber;
 }
 
 export function job() {
@@ -47,13 +47,15 @@ export function pet() {
 }
 
 export function uuid() {
-  var dt = new Date().getTime();
-  var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
-    var r = (dt + Math.random() * 16) % 16 | 0;
+  let dt = new Date().getTime();
+  const uuidMask = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, c => {
+    // tslint:disable-next-line no-bitwise
+    const r = (dt + Math.random() * 16) % 16 | 0;
     dt = Math.floor(dt / 16);
-    return (c == 'x' ? r : (r & 0x3) | 0x8).toString(16);
+    // tslint:disable-next-line no-bitwise
+    return (c === 'x' ? r : (r & 0x3) | 0x8).toString(16);
   });
-  return uuid;
+  return uuidMask;
 }
 
 export function password() {
@@ -63,18 +65,18 @@ export function password() {
 export function username() {
   let nameOne = name();
   let nameTwo = name();
-  let charNumber = randomNumber(2, 5);
+  const charNumber = randomNumber(2, 5);
   nameOne = nameOne.slice(0, charNumber);
   nameTwo = nameTwo.slice(0, charNumber);
   return `${nameOne}${nameTwo}`.toLowerCase();
 }
 
 export function ip() {
-  let ip: any = 'x.x.x.x';
+  let ipMask: any = 'x.x.x.x';
   for (let i = 0; i < 12; i++) {
-    ip = ip.replace('x', randomNumber(127, 0));
+    ipMask = ipMask.replace('x', randomNumber(127, 0));
   }
-  return ip;
+  return ipMask;
 }
 
 export function country() {
@@ -94,7 +96,7 @@ export function longitude() {
 }
 
 export function email() {
-  let u = username();
-  let email = randomElementFromArray(emailDomains);
-  return `${u}@${email}`;
+  const usr = username();
+  const eml = randomElementFromArray(emailDomains);
+  return `${usr}@${eml}`;
 }
