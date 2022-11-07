@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 import {
   personMaleNames,
@@ -10,18 +10,12 @@ import {
   stateNames,
   interests,
   colors,
-} from "./data.js";
+} from './data.js';
 
-import {
-  randomElementFromArray,
-  randomNumber,
-  randomStringWithNumbers,
-} from "./helpers.js";
+import { randomElementFromArray, randomNumber, randomStringWithNumbers } from './helpers.js';
 
 export function name() {
-  return Math.random() > 0.5
-    ? randomElementFromArray(personMaleNames)
-    : randomElementFromArray(personFemaleNames);
+  return Math.random() > 0.5 ? randomElementFromArray(personMaleNames) : randomElementFromArray(personFemaleNames);
 }
 
 export function age() {
@@ -29,9 +23,9 @@ export function age() {
 }
 
 export function phone() {
-  let number: any = "(xxx) xxx-xxxx";
+  let number: any = '(xxx) xxx-xxxx';
   for (let i = 0; i < 10; i++) {
-    number = number.replace("x", randomNumber(0, 10));
+    number = number.replace('x', randomNumber(0, 10));
   }
   return number;
 }
@@ -54,14 +48,11 @@ export function pet() {
 
 export function uuid() {
   var dt = new Date().getTime();
-  var uuid = "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(
-    /[xy]/g,
-    function (c) {
-      var r = (dt + Math.random() * 16) % 16 | 0;
-      dt = Math.floor(dt / 16);
-      return (c == "x" ? r : (r & 0x3) | 0x8).toString(16);
-    }
-  );
+  var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+    var r = (dt + Math.random() * 16) % 16 | 0;
+    dt = Math.floor(dt / 16);
+    return (c == 'x' ? r : (r & 0x3) | 0x8).toString(16);
+  });
   return uuid;
 }
 
@@ -79,9 +70,9 @@ export function username() {
 }
 
 export function ip() {
-  let ip: any = "x.x.x.x";
+  let ip: any = 'x.x.x.x';
   for (let i = 0; i < 12; i++) {
-    ip = ip.replace("x", randomNumber(127, 0));
+    ip = ip.replace('x', randomNumber(127, 0));
   }
   return ip;
 }
