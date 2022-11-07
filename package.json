@@ -29,7 +29,7 @@
     "url": "https://github.com/joziasmartini/xfake/issues"
   },
   "homepage": "https://github.com/joziasmartini/xfake#readme",
-  "dependencies": {
+  "devDependencies": {
     "typescript": "^4.8.2"
   }
 }
