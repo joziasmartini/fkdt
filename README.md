@@ -9,26 +9,27 @@ You can use this library as a fake data generator for projects, tests and more. 
 ### Installation
 
 - Install through `npm install fkdt`
-- Import as `import * as fake from "fkdt"`
-- Use as simple as `const email = fake.email();`
+- Import as `import * as fkdt from "fkdt"`
+- Use as simple as `const email = fkdt.email();`
 
 ### API
 
-- `fake.name()`
-- `fake.email()`
-- `fake.username()`
-- `fake.password()`
-- `fake.ip()`
-- `fake.age()`
-- `fake.phone()`
-- `fake.job()`
-- `fake.interest()`
-- `fake.color()`
-- `fake.pet()`
-- `fake.uuid()`
-- `fake.country()`
-- `fake.state()`
-- `fake.latitude()`
+- `fkdt.name()`
+- `fkdt.email()`
+- `fkdt.username()`
+- `fkdt.password()`
+- `fkdt.ip()`
+- `fkdt.age()`
+- `fkdt.phone()`
+- `fkdt.job()`
+- `fkdt.interest()`
+- `fkdt.color()`
+- `fkdt.pet()`
+- `fkdt.uuid()`
+- `fkdt.country()`
+- `fkdt.state()`
+- `fkdt.latitude()`
+- `fkdt.longitude()`
 
 ### License
 

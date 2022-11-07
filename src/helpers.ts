@@ -4,7 +4,7 @@
  * @returns an element from the array
  * @example randomElementFromArray([1, 2, 3]) // returns 2
  */
-export function randomElementFromArray(arr) {
+export function randomElementFromArray(arr: any[]): any {
   return arr[Math.floor(Math.random() * arr.length)];
 }
 
@@ -15,7 +15,7 @@ export function randomElementFromArray(arr) {
  * @returns a random number
  * @example randomNumber(1, 10) // returns 5
  */
-export function randomNumber(min, max) {
+export function randomNumber(min: number, max: number): number {
   min = Math.ceil(min);
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -27,12 +27,11 @@ export function randomNumber(min, max) {
  * @returns a random string with letters and numbers
  * @example randomString(10) // returns "a1b2c3d4e5"
  */
-export function randomStringWithNumbers(length) {
-  var result = "";
-  var characters =
-    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-  var charactersLength = characters.length;
-  for (var i = 0; i < length; i++) {
+export function randomStringWithNumbers(length: number): any {
+  let result = '';
+  const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  const charactersLength = characters.length;
+  for (let i = 0; i < length; i++) {
     result += characters.charAt(Math.floor(Math.random() * charactersLength));
   }
   return result;
