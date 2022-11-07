@@ -48,7 +48,7 @@ export function pet() {
 
 export function uuid() {
   let dt = new Date().getTime();
-  const uuidMask = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, c => {
+  const uuidMask = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, (c) => {
     // tslint:disable-next-line no-bitwise
     const r = (dt + Math.random() * 16) % 16 | 0;
     dt = Math.floor(dt / 16);
