@@ -1,6 +1,6 @@
 {
   "name": "fkdt",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "description": "Generate fake data for projects.",
   "main": "src/index.js",
   "type": "module",
