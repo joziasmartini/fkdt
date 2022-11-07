@@ -29,6 +29,7 @@ You can use this library as a fake data generator for projects, tests and more. 
 - `fake.country()`
 - `fake.state()`
 - `fake.latitude()`
+- `fake.longitude()`
 
 ### License
 
