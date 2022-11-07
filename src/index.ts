@@ -29,7 +29,7 @@ export function age() {
 }
 
 export function phone() {
-  let number = "(xxx) xxx-xxxx";
+  let number: any = "(xxx) xxx-xxxx";
   for (let i = 0; i < 10; i++) {
     number = number.replace("x", randomNumber(0, 10));
   }
@@ -52,7 +52,7 @@ export function pet() {
   return randomElementFromArray(petNames);
 }
 
-function uuid() {
+export function uuid() {
   var dt = new Date().getTime();
   var uuid = "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(
     /[xy]/g,
@@ -79,7 +79,7 @@ export function username() {
 }
 
 export function ip() {
-  let ip = "x.x.x.x";
+  let ip: any = "x.x.x.x";
   for (let i = 0; i < 12; i++) {
     ip = ip.replace("x", randomNumber(127, 0));
   }
