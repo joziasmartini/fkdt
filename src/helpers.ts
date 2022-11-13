@@ -1,3 +1,5 @@
+'use strict';
+
 /**
  * Returns a random element from an array
  * @param {array} arr receives an array
