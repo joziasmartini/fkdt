@@ -9,7 +9,7 @@ You can use this library as a fake data generator for projects, tests and more. 
 ### Installation
 
 - Install through `npm install fkdt`
-- Import as `import * as fkdt from "fkdt"`
+- Import as `import fkdt from "fkdt"`
 - Use as simple as `const email = fkdt.email();`
 
 ### API
