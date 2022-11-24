@@ -1,14 +1,14 @@
 {
   "name": "fkdt",
-  "version": "0.9.5",
+  "version": "0.9.6",
   "description": "Generate fake data for projects.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "type": "module",
   "scripts": {
     "dev": "node dist/index.js",
-    "build": "tsc --build",
-    "clean": "tsc --build --clean",
+    "build": "tsc",
+    "clean": "tsc --clean",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json"
   },
