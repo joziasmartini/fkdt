@@ -1,8 +1,9 @@
 {
   "name": "fkdt",
-  "version": "0.9.3",
+  "version": "0.9.4",
   "description": "Generate fake data for projects.",
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "type": "module",
   "scripts": {
     "dev": "node dist/index.js",
