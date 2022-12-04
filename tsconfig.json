@@ -1,11 +1,13 @@
 {
   "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./lib",
     "target": "es5",
     "module": "commonjs",
     "declaration": true,
     "declarationDir": "./lib",
-    "outDir": "./lib",
-    "strict": true
+    "strict": false,
+    "importHelpers": true
   },
   "include": ["src"],
   "exclude": ["node_modules", "**/__tests__/*"]
